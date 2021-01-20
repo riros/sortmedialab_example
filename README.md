@@ -25,13 +25,14 @@ SoftMediaLab
 Инструкции для запуска
 -----------------------
 
-####  для разраотчика
+####  для разработчика
+1) установка и активация окружения <pre> virtualenv ../venv && source ../venv/bin/activate</pre>
 
-1) установка пакетов <pre>pip install -r requirements.txt</pre>
+2) установка пакетов <pre>pip install -r requirements.txt</pre>
 
-2) инициализация базы <pre>make init_db</pre>
+3) инициализация базы <pre>make init_db</pre>
 
-3) запуск сервера для разработки <pre>make serve</pre>
+4) запуск сервера для разработки <pre>make serve</pre>
 
 ##### Пути приложения
 <pre>/ - апи сервиса
