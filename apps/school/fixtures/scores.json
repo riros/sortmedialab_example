@@ -1,0 +1,50 @@
+[
+{
+  "model": "school.score",
+  "pk": "06baf48b-3020-4668-aa5b-9571033c7ca6",
+  "fields": {
+    "created": "2021-01-20T15:04:59.102Z",
+    "updated": "2021-01-20T15:04:59.102Z",
+    "deleted": false,
+    "index": 4,
+    "name": "Хорошо",
+    "short_name": "хор"
+  }
+},
+{
+  "model": "school.score",
+  "pk": "131cf98b-3d58-4e5a-a025-17b850b00e0d",
+  "fields": {
+    "created": "2021-01-20T14:54:58.710Z",
+    "updated": "2021-01-20T14:54:58.710Z",
+    "deleted": false,
+    "index": 1,
+    "name": "Неудовлетворительно",
+    "short_name": "неуд"
+  }
+},
+{
+  "model": "school.score",
+  "pk": "2204f115-a6ba-4747-83a4-d387a8289e23",
+  "fields": {
+    "created": "2021-01-20T15:04:46.498Z",
+    "updated": "2021-01-20T15:04:46.498Z",
+    "deleted": false,
+    "index": 3,
+    "name": "Удовлетворительно",
+    "short_name": "уд"
+  }
+},
+{
+  "model": "school.score",
+  "pk": "92194118-4941-4e74-bdc0-792554a3e2d3",
+  "fields": {
+    "created": "2021-01-20T15:05:06.601Z",
+    "updated": "2021-01-20T15:05:06.601Z",
+    "deleted": false,
+    "index": 5,
+    "name": "Отлично",
+    "short_name": "отл"
+  }
+}
+]
