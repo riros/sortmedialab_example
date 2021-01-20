@@ -6,7 +6,6 @@ __python__/*
 .tox
 
 # do NOT track coverage files/folders
-.coverage
 coverage_html
 
 # do NOT track compiled language files
@@ -17,3 +16,45 @@ coverage_html
 *.todo
 
 !**/.keepme
+
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+**/.~*.xlsx#
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# C extensions
+*.so
+
+
+### Django ###
+*.log*
+*.pyc
+*.pyd
+*.pyx
+db.sqlite3
+src/data.json
+
+### IDEA ###
+.idea
+.vs
+*.http
+celerybeat.pid
+celerybeat-schedule
+celerybeat-schedule.db
