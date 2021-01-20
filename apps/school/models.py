@@ -1,6 +1,8 @@
+from datetime import date
+
 from django.contrib.auth.models import AbstractUser
 # Create your models here.
-from django.db.models import CharField, ForeignKey, IntegerField, PROTECT
+from django.db.models import CharField, DateField, ForeignKey, IntegerField, PROTECT
 
 from example.models import BaseModel
 
@@ -21,8 +23,12 @@ class EUser(AbstractUser, BaseModel):
     user_type = IntegerField(choices=USER_TYPE, default=UNSET, verbose_name='тип пользователя')
     abs_score = ForeignKey('Score', on_delete=PROTECT, verbose_name='успеваемость', null=True, blank=True)
 
+    birth_day = DateField(verbose_name='дата рождения', default=date(1900, 1, 1))
+
+    middle_name = CharField(max_length=255, verbose_name='Отчество', default=None, null=True, blank=True)
+
     def __str__(self):
-        return self.username
+        return ''.join([self.first_name, self.last_name, self.middle_name])
 
 
 class Score(BaseModel):

@@ -12,6 +12,8 @@ class EUserSerializer(serializers.HyperlinkedModelSerializer):
             'id',
             'user_type',
             'abs_score',
+            'birth_day'
+
         )
 
 

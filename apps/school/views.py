@@ -45,6 +45,7 @@ class EUserViewSet(viewsets.ModelViewSet):
         'email': rels,
         'abs_score': ('gt', 'gte', 'lt', 'lte', 'exact'),
         'user_type': ('exact',),
+        'birth_day': ('gt', 'gte', 'lt', 'lte', 'exact')
 
     }
     search_fields = ('username', 'user_type')
